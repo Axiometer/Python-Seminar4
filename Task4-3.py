@@ -11,11 +11,15 @@ def generate_list(n):
     return generated_list
 
 def main():
+    # генерируем случайный список из 13 элементов
     my_list = generate_list(13)
+
+    # преобразовываем его в множество
     my_set = set(my_list)
 
-    print(*my_list)
-    print(*my_set)
+    # выводим оба
+    print("Исходная последовательность:", *my_list)
+    print("Неповторяющиеся элементы исходной последовательности:", *my_set)
 
 if __name__ == "__main__":
     main()
